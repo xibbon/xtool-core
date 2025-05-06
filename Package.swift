@@ -13,7 +13,7 @@ extension Product.Library.LibraryType {
 }
 
 let package = Package(
-    name: "SuperchargeCore",
+    name: "xtool-core",
     platforms: [
         .iOS("14.0"),
         .macOS("11.0"),
@@ -112,22 +112,22 @@ package.targets += [
 package.targets += [
     .binaryTarget(
         name: "plist",
-        url: "https://github.com/SuperchargeApp/Superlibs/releases/download/1.0.0/plist.xcframework.zip",
+        url: "https://github.com/xtool-org/xtool-libs/releases/download/1.0.0/plist.xcframework.zip",
         checksum: "b71d1b2c86880cd2c8f353c6357c6d610849a2b461855ae782922720a0ecce3e"
     ),
     .binaryTarget(
         name: "libimobiledeviceGlue",
-        url: "https://github.com/SuperchargeApp/Superlibs/releases/download/1.0.0/libimobiledeviceGlue.xcframework.zip",
+        url: "https://github.com/xtool-org/xtool-libs/releases/download/1.0.0/libimobiledeviceGlue.xcframework.zip",
         checksum: "227c43c1d7db213f3f75d8cdb0bba873321151ff80c2afd5217982642a2810e1"
     ),
     .binaryTarget(
         name: "usbmuxd",
-        url: "https://github.com/SuperchargeApp/Superlibs/releases/download/1.0.0/usbmuxd.xcframework.zip",
+        url: "https://github.com/xtool-org/xtool-libs/releases/download/1.0.0/usbmuxd.xcframework.zip",
         checksum: "9afdc82607c4339e19f31a487fe042ebee778040e805380704c5d89fb2a99081"
     ),
     .binaryTarget(
         name: "libimobiledevice",
-        url: "https://github.com/SuperchargeApp/Superlibs/releases/download/1.0.0/libimobiledevice.xcframework.zip",
+        url: "https://github.com/xtool-org/xtool-libs/releases/download/1.0.0/libimobiledevice.xcframework.zip",
         checksum: "24c23d4ac43581e9bd6f3f198bade77d0ca928226b4a2230963162472828611f"
     ),
     .binaryTarget(
