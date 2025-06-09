@@ -18,8 +18,14 @@ public enum ProtoCodableError: Error {
     case unknownType(String, containerType: String)
 }
 
+#if swift(>=6.2)
+public typealias CodableAndSendableMetatype = Codable & SendableMetatype
+#else
+public typealias CodableAndSendableMetatype = Codable
+#endif
+
 // Represents a codable protocol, where the concrete type can be decoded based on the identifier
-public protocol ProtoCodable: Codable {
+public protocol ProtoCodable: CodableAndSendableMetatype {
     static var identifier: String { get }
 }
 
