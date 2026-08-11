@@ -31,7 +31,7 @@ let package = Package(
         ),
         .library(
             name: "ProtoCodable",
-            type: .smart,
+            type: .static,
             targets: ["ProtoCodable"]
         ),
         .library(
